@@ -152,7 +152,7 @@ int main() {
     snake.push_back({9, 10});
     snake.push_back({8, 10}); 
     cout<<"=======start=======\n";
-    cout<<"按下任意键开始！！！"<<'\n';
+    cout<<"Press any key to start!!!"<<'\n';
     _getch();
     system("cls");
     render(snake);
@@ -174,7 +174,7 @@ int main() {
         render(snake);
         Sleep(120);
     }
-    cout<<"按下空格结束";
+    cout<<"Press Space to exit";
     while(true){
         if(_kbhit()){
             char ch=static_cast<char>(_getch());
