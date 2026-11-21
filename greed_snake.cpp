@@ -151,6 +151,10 @@ int main() {
     snake.push_back({10, 10}); 
     snake.push_back({9, 10});
     snake.push_back({8, 10}); 
+    cout<<"=======start=======\n";
+    cout<<"按下任意键开始！！！"<<'\n';
+    _getch();
+    system("cls");
     render(snake);
     while (true) {
         readKey(snake);
@@ -169,6 +173,14 @@ int main() {
         }
         render(snake);
         Sleep(120);
+    }
+    cout<<"按下空格结束";
+    while(true){
+        if(_kbhit()){
+            char ch=static_cast<char>(_getch());
+            if(ch==' ')
+            break;
+        }
     }
     return 0;
 }
